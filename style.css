@@ -1,0 +1,28 @@
+html, body {
+  font-family: Arial;
+  background-color: #f1f1f1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+canvas {
+  background-color: black;
+  border: 20px solid white;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px grey;
+}
+h1 {
+  color: black;
+  font-family: Chalkduster;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+svg {
+  width: inherit;
+  height: inherit;
+}
