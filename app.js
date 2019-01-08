@@ -1,33 +1,31 @@
 window.onload = function() {
-
+let auto_increment = 0;
 class Planet {
-  constructor(centerX, centerY, radius, color) {
+  constructor(centerX, centerY, radius, color, id) {
     this.centerX = centerX;
     this.centerY = centerY;
     this.radius = radius;
     this.color = color;
+    auto_increment ++;
+    id = auto_increment;
+    this.id = id;
+    document.body.innerHTML += '<svg id="'+id+'" class="planet"></svg>';
+    $("#")
   }
-  svg = '<svg class="planet"></svg>'
-          <circle cx="100" cy="100" r="100" fill="white" />
 
-  display(){
-    html
-  }
+  // create(){
+  //   let svg = document.createElement("svg");
+  //   let circle = document.createElement("circle");
+  //   svg.appendChild(circle);
+  //   this.attr("cx", cx);
+  // }
 }
 
-let container = $(".container")
+let container = $(".container");
 
-
-
-setInterval(function(){ alert("Hello"); }, 3000);
-
-
-let homePlanet = $(".planet").children()
-
-console.log(homePlanet.attr("cx"));
-homePlanet.attr("cx", 100)
-console.log(homePlanet.attr("cx"));
-
-let planet = new Planet(100, 100, 10, "white")
+let planet1 = new Planet(200, 100, 10, "white")
+let planet2 = new Planet(200, 100, 10, "white")
+let planet3 = new Planet(200, 100, 10, "white")
+let planet4 = new Planet(200, 100, 10, "white")
 
 } // end of window.onload = function()
