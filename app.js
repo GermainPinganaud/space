@@ -10,7 +10,6 @@ class Planet {
     id = auto_increment;
     this.id = id;
     document.body.innerHTML += '<svg id="'+id+'" class="planet"></svg>';
-    $("#")
   }
 
   // create(){
